@@ -20,3 +20,26 @@ function saludar(){
 }
 
 saludar();
+
+
+//                      CLASES
+
+class Persona{
+    private nombre:string; // asignarle el valor a la variable 
+
+    constructor(nombre: string){
+        this.nombre = nombre;
+    }
+
+    getNombre():string{
+        return this.nombre;
+    }
+
+    static metodoEstatico():int{
+        return 21;
+    }
+}
+
+let persona1 = new Persona("Luis");
+console.log(persona1.getNombre());
+console.log(Persona.metodoEstatico());
