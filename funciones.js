@@ -30,3 +30,14 @@ class Persona {
 let persona1 = new Persona("Luis");
 console.log(persona1.getNombre());
 console.log(Persona.metodoEstatico());
+let user1 = { userName: "Luis", password: "1234", confirmPass: "1234" };
+let user2 = { userName: "Angel", password: "4321" }; // No es necesario confirmar password
+console.log(user1);
+console.log(user1.userName); // Unicamente imprimir un valor de los atributos
+console.log(user2);
+let avion = {
+    abordarTransporte: function () {
+        console.log("abordando");
+    }
+};
+avion.abordarTransporte();
